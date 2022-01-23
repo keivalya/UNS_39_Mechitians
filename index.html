@@ -90,7 +90,8 @@
       <main class="px-3">
         <h1>Snehana</h1>
         <p class="lead">
-          Machine Learning & Neural Network based algorithm to detect dermatosis at earlier stage to prevent any further complications.
+          Machine Learning & Neural Network based algorithm to detect dermatosis
+          at earlier stage to prevent any further complications.
         </p>
         <p class="lead">
           <!-- <a
@@ -115,6 +116,9 @@
             "https://teachablemachine.withgoogle.com/models/Yl3Z0YMy2/";
 
           let model, webcam, labelContainer, maxPredictions;
+
+          const modelURL = URL + "model.json";
+          const metadataURL = URL + "metadata.json";
 
           let isIos = false;
           // fix when running demo in ios, video will be frozen;
@@ -190,7 +194,6 @@
               labelContainer.childNodes[i].innerHTML = classPrediction;
             }
           }
-          
 
           // let video;
           // let flippedVideo;
@@ -249,9 +252,7 @@
       </main>
 
       <footer class="mt-auto text-white-50">
-        <p>
-          Made with ❤️ by Mechitians, BVM
-        </p>
+        <p>Made with ❤️ by Mechitians, BVM</p>
       </footer>
     </div>
   </body>
