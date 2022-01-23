@@ -90,7 +90,8 @@
       <main class="px-3">
         <h1>Snehana</h1>
         <p class="lead">
-          Machine Learning / AI based algorithm to detect problems caused blah blah blah.
+          Machine Learning / AI based algorithm to detect problems caused blah
+          blah blah.
         </p>
         <p class="lead">
           <!-- <a
@@ -109,6 +110,21 @@
         <script type="text/javascript">
           // More API functions here:
           // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+          splitbee.init();
+
+          //iniate the default state
+          const [camState, setCamState] = useState("on");
+
+          const [camFace, setCamFace] = useState("environment");
+
+          const webcam = useRef(null);
+
+          const videoConstraints = {
+            facingMode: camFace,
+          };
+
+          splitbee.track('visit Snehana');
 
           // the link to your model provided by Teachable Machine export panel
           const URL =
@@ -248,9 +264,7 @@
       </main>
 
       <footer class="mt-auto text-white-50">
-        <p>
-          Made with ❤️ by Mechitians, BVM
-        </p>
+        <p>Made with ❤️ by Mechitians, BVM</p>
       </footer>
     </div>
   </body>
