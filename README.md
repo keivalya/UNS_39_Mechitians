@@ -16,6 +16,7 @@ For the model and deployment, we used Tensorflow, Keras, Numpy, Pandas, Opencv, 
 
 ## Challenges we ran into
 The first issue we encountered was model accuracy, which was initially about 5% to 20% but later increased to 90.31 percent. Second, we had challenges with Realtime Detection and Integration with Deployment. We have had troubles with Recommender's system as well.
+
 <img src = "assets/7c6m.gif" style="height:250px;" />
 
 ## Accomplishments that we're proud of
