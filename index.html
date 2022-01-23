@@ -130,7 +130,7 @@
           const URL =
             "https://teachablemachine.withgoogle.com/models/Yl3Z0YMy2/";
 
-          let model, webcam, labelContainer, maxPredictions;
+          let model, labelContainer, maxPredictions;
 
           let isIos = false;
           // fix when running demo in ios, video will be frozen;
@@ -191,6 +191,20 @@
 
           // run the webcam image through the image model
           async function predict() {
+            if (
+              typeof webcam.current !== "undefined" &&
+              webcam.current !== null &&
+              webcam.current.video.readyState === 4
+            ) {
+              const video = webcam.current.video;
+              const videoWidth = webcam.current.video.videoWidth;
+              const videoHeight = webcam.current.video.videoHeight;
+
+              // Set video width
+              webcam.current.video.width = width;
+              webcam.current.video.height = height;
+            }
+
             // predict can take in an image, video or canvas html element
             let prediction;
             if (isIos) {
