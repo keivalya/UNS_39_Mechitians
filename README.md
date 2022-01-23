@@ -1,3 +1,4 @@
+
 # Snehana
 
 **Snehana is a simple machine learning and artificial intelligence (ML/AI) based method for detecting skin texture (oily or dry) and prescribing the appropriate treatment.**
@@ -15,12 +16,18 @@ For the model and deployment, we used Tensorflow, Keras, Numpy, Pandas, Opencv, 
 
 ## Challenges we ran into
 The first issue we encountered was model accuracy, which was initially about 5% to 20% but later increased to 90.31 percent. Second, we had challenges with Realtime Detection and Integration with Deployment. We have had troubles with Recommender's system as well.
+<iframe src="https://giphy.com/embed/32mC2kXYWCsg0" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ## Accomplishments that we're proud of
 The model has been successfully put on a web-app and can distinguish between oily and dry skin textures. It can also detect skin illness if any is present. The model now has an accuracy of 90.31%, which is a fantastic achievement for newcomers!!
+<div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="270" src="https://giphy.com/embed/cuhC0bculU6YGE4dtN/video" width="480"></iframe></div>
 
 ## What we learned
 For the model and deployment, we used Tensorflow, Keras, Numpy, Pandas, Opencv, and Matplotlib, as well as HTML, CSS, and Tensorflow. js
 
 ## Future Scope for Snehana
 The model needs to be improved further to achieve greater accuracy, because when it comes to healthcare, the level of certainty should be as high as possible. Furthermore, the model can be trained so that the user receives an initial prescription as well as hospital recommendations for contacting a dermatologist.
+<br/><br/>
+
+<iframe src="https://giphy.com/embed/xUPJUvoyx5DH1tHG7e" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/9Ai5dIk8xvBm0" width="480" height="399" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
