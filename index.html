@@ -8,7 +8,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.88.1" />
-    <title>Cover Template · Bootstrap v5.1</title>
+    <title>Snehana</title>
 
     <link
       rel="canonical"
@@ -78,7 +78,7 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
         <div>
-          <h3 class="float-md-start mb-0">Healer</h3>
+          <h3 class="float-md-start mb-0">Snehana</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#">Features</a>
@@ -88,18 +88,16 @@
       </header>
 
       <main class="px-3">
-        <h1>Healer</h1>
+        <h1>Snehana</h1>
         <p class="lead">
-          Cover is a one-page template for building simple and beautiful home
-          pages. Download, edit the text, and add your own fullscreen background
-          photo to make it your own.
+          Machine Learning / AI based algorithm to detect problems caused blah blah blah.
         </p>
         <p class="lead">
-          <a
+          <!-- <a
             href="#"
             class="btn btn-lg btn-secondary fw-bold border-white bg-white"
             >Learn more</a
-          >
+          > -->
         </p>
         <div id="webcam-container"></div>
         <div id="label-container"></div>
@@ -113,7 +111,8 @@
           // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
           // the link to your model provided by Teachable Machine export panel
-          const URL = "https://teachablemachine.withgoogle.com/models/Yl3Z0YMy2/";
+          const URL =
+            "https://teachablemachine.withgoogle.com/models/Yl3Z0YMy2/";
 
           let model, webcam, labelContainer, maxPredictions;
 
@@ -191,14 +190,66 @@
               labelContainer.childNodes[i].innerHTML = classPrediction;
             }
           }
+
+          // let video;
+          // let flippedVideo;
+          // // To store the classification
+          // let label = "";
+
+          // // Load the model first
+          // function preload() {
+          //   classifier = ml5.imageClassifier(imageModelURL + "model.json");
+          // }
+
+          // function setup() {
+          //   createCanvas(320, 280);
+          //   // Create the video
+          //   video = createCapture(VIDEO);
+          //   video.size(320, 240);
+          //   video.hide();
+
+          //   flippedVideo = ml5.flipImage(video);
+          //   // Start classifying
+          //   classifyVideo();
+          // }
+
+          // function draw() {
+          //   background(0);
+          //   // Draw the video
+          //   image(flippedVideo, 0, 0);
+
+          //   // Draw the label
+          //   fill(255);
+          //   textSize(16);
+          //   textAlign(CENTER);
+          //   text(label, width / 2, height - 4);
+          // }
+
+          // function classifyVideo() {
+          //   flippedVideo = ml5.flipImage(video);
+          //   classifier.classify(flippedVideo, gotResult);
+          //   flippedVideo.remove();
+          // }
+
+          // // When we get a result
+          // function gotResult(error, results) {
+          //   // If there is an error
+          //   if (error) {
+          //     console.error(error);
+          //     return;
+          //   }
+          //   // The results are in an array ordered by confidence.
+          //   // console.log(results[0]);
+          //   label = results[0].label;
+          //   // Classifiy again!
+          //   classifyVideo();
+          // }
         </script>
       </main>
 
       <footer class="mt-auto text-white-50">
         <p>
-          Cover template for
-          <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
-          by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.
+          Made with ❤️ by Mechitians, BVM
         </p>
       </footer>
     </div>
