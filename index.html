@@ -147,7 +147,7 @@
                 .getElementById("webcam-container")
                 .appendChild(webcam.webcam); // webcam object needs to be added in any case to make this work on iOS
               // grab video-object in any way you want and set the attributes
-              const webCamVideo = document.getElementsByTagName("video")[0];
+              const webCamVideo = document.getElementsByTagName("video")[1];
               webCamVideo.setAttribute("playsinline", true); // written with "setAttribute" bc. iOS buggs otherwise
               webCamVideo.muted = "true";
               webCamVideo.style.width = width + "px";
@@ -190,6 +190,7 @@
               labelContainer.childNodes[i].innerHTML = classPrediction;
             }
           }
+          
 
           // let video;
           // let flippedVideo;
