@@ -124,7 +124,7 @@
             facingMode: camFace,
           };
 
-          splitbee.track('visit Snehana');
+          splitbee.track("visit Snehana");
 
           // the link to your model provided by Teachable Machine export panel
           const URL =
@@ -204,6 +204,24 @@
                 ": " +
                 prediction[i].probability.toFixed(2);
               labelContainer.childNodes[i].innerHTML = classPrediction;
+            }
+          }
+
+          function turnOffCamera() {
+            if (camState === "on") {
+              setCamState("off");
+              // webcam.stop()
+            } else {
+              setCamState("on");
+              // webcam.play()
+            }
+          }
+
+          function changeCamera() {
+            if (camFace === "environment") {
+              setCamFace("user");
+            } else {
+              setCamFace("environment");
             }
           }
 
